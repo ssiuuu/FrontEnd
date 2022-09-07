@@ -41,10 +41,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   Homepage en de footer van de Oedipus website
   <img src="readme-images/home_top.png" width="375px" alt="Homepage van de Oedipus website">
+  
   <img src="readme-images/home_footer.png" width="375px" alt="Footer van de Oedipus website">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   De tweede pagina van de Oedipus pagina (Beers)
+  
   <img src="readme-images/page_2.jpg" width="375px" alt="Tweede pagina van de Oedipus website">
 
  
