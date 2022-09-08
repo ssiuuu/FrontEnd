@@ -63,27 +63,24 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Dit was de eerste keer dat ik de screenreader gebruikte op de Mac. Het duurt wat langer to alle tekst is voorgelezen. Met de pijltjes en TAB kon ik wel makkelijk navigeren. Het zou erg lastig zijn als je niets ziet en wat wilt bestellen.  
 
 
   #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  met de touchscreen is het wel makkelijk te besturen. Maar met toetsenbord en muis kan ik over de items hoveren voor meer informatie.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
+  Spasmes / parkingson:
+Apparaat met schrokken: kan niet drukken op mijn toetsen op laptop, muispad verschuift heletijd en kan eigenlijk niet drukken op wat je wilt drukken. Kan niet focussen op de taak die je wilt doen, alleen op de schokken
 
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+  Elastiek: Het duurt wat langer om te typen, moet er aan wennen. Moet er aan denken om je middelvinger te gebruiken maar niet je vinger. Pagina srollt vanzelf omdat ik 2 vingers tegelijk de mousepad met 2 vingers aanraak. Ook de pagina gaat front en backwards
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+  Bril met witte vlekken:  iets minder zicht, maar wel leesbaar.
+Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en witte tekst is minder leesbaar op een pagina met veel kleur.
 
 </details>
 
