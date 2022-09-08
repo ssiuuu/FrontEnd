@@ -57,7 +57,7 @@ nav {
     text-decoration: none;
 }
 
-ul {
+.smaken {
     color: var(--oedi-roze);
     list-style: none;
     display: flex;
@@ -70,4 +70,12 @@ li {
     text-decoration: none;
     padding: 1em;
     border-radius: 20px;
+}
+
+.producten {
+    
+}
+
+.product-foto > img{
+    width: 200px;
 }
