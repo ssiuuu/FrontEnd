@@ -18,7 +18,9 @@ button, summary {
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
+	--oedi-paars:#4325c5;
+    --oedi-roze:#f78da7;
+    --oedi-oranje:#fecc01;
 	--color-background:#eee;
 }
 
@@ -33,7 +35,16 @@ button, summary {
 /* jouw code */
 
 body {
-  color:var(--color-text);
+  color:var(--oedi-paars);
   background-color:var(--color-background);
 }
 
+h1 {
+ font-family:Verdana, Arial, sans-serif;
+    color: var (--colortext);
+    
+}
+
+ul {
+    color:var(--oedi-oranje);
+}
