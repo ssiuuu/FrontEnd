@@ -92,7 +92,8 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_voor.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown_na.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
