@@ -19,7 +19,7 @@ button, summary {
 :root {
 	/* startje */
 	--oedi-paars:#4325c5;
-    --oedi-roze:#f78da7;
+    --oedi-roze:#dd2c82;
     --oedi-oranje:#fecc01;
 	--color-background:#eee;
 }
@@ -34,11 +34,15 @@ button, summary {
 
 /* jouw code */
 
+header {
+    background-color: yellow;
+}
+
 body {
     color:var(--oedi-paars);
     background-color:var(--color-background);
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 
 }
 
@@ -55,6 +59,7 @@ nav {
     background:  var(--oedi-roze);
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 .smaken {
@@ -62,20 +67,71 @@ nav {
     list-style: none;
     display: flex;
     flex-direction: row;
+    text-transform: uppercase;
 }
 
-li {
+.smaken > li {
     background: var(--oedi-oranje);
     margin: 1em;
     text-decoration: none;
     padding: 1em;
     border-radius: 20px;
-}
-
-.producten {
+    flex-grow: 1;
+    font-weight: bold;
     
 }
 
-.product-foto > img{
-    width: 200px;
+.producten {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    border: 5px solid grey;
+    text-decoration:none;
+    
+
 }
+
+.product-foto > img{
+    width: 250px;
+    border: 2px solid grey;
+    display: flex;
+    flex-direction: row;
+}
+
+.product-foto > p.nth-of-type(0) {
+    font-weight: bold;
+    
+}
+
+button {
+    background-color: var(--oedi-roze);
+    padding: 1em;
+    border-radius: 20px;
+    color: var(--oedi-oranje);
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    
+}
+
+footer {
+    background-color: yellow;
+    color: black;
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+footer > section{
+    
+   width: 48%;
+
+}
+
+
