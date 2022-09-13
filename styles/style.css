@@ -17,16 +17,12 @@ button, summary {
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	/* startje */
+	/* Huisstijl kleuren defineren voor de color: var (--kleuren); */
 	--oedi-paars:#4325c5;
     --oedi-roze:#dd2c82;
     --oedi-oranje:#fecc01;
 	--color-background:#eee;
 }
-
-
-
-
 
 /****************/
 /* JOUW STYLING */
@@ -34,104 +30,171 @@ button, summary {
 
 /* jouw code */
 
+
 header {
-    background-color: yellow;
+    /*background-color: yellow;*/
+    background-image: url('https://oedipus.com/wp-content/uploads/2022/05/headers_webshop_02.svg');
+	height: 10em;
+    
 }
 
 body {
-    color:var(--oedi-paars);
+    
     background-color:var(--color-background);
     text-align: center;
     /*text-transform: uppercase;*/
 
 }
 
-
-
-h1 {
-    font-family: 'Permanent Marker', cursive, Verdana, Arial;
-    color: var (--colortext);
-    text-align: center;
-}
-
-/*MENU dropdown menu*/
-nav {
-    background:  var(--oedi-roze);
-    color: white;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.smaken {
-    color: var(--oedi-roze);
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-}
-
-.smaken > li {
-    background: var(--oedi-oranje);
-    margin: 1em;
-    text-decoration: none;
-    padding: 1em;
-    border-radius: 20px;
-    flex-grow: 1;
-    font-weight: bold;
+@media only screen and (max-width: 800px) {
     
+    /*logo linksboven in scherm laten*/
+    .logo {
+        width: 7em;
+        position: absolute;
+        left:0;
+        
+        /*
+        position: sticky;
+        top: 0; */  
+        margin: 1em;
+    }
+    
+    p {
+        font-family: Arial;
+
+    }
+    
+    h1 {
+        font-family: 'Boogaloo', Arial;
+        color:var(--oedi-paars);
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+    
+    h3 {
+        font-family: 'Boogaloo', Arial;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin: .2em;
+
+
+    }
+
+    /*MENU dropdown menu*/
+    nav {
+        font-family: 'Boogaloo', cursive, Arial;
+        background:  white;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        margin: .5em;
+        margin-top: 1.2em;
+        text-decoration: none;
+        padding: .3em;
+        border-radius: 3em;
+        font-weight: bold;
+        
+        font-size: 2em;
+        
+        position: absolute;
+        right:0;
+        
+
+    }
+
+    .smaken {
+        font-family: 'Boogaloo', cursive, Arial;
+        color: var(--oedi-roze);
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-transform: uppercase;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1.3em;
+        
+        
+
+    }
+
+    .smaken > li {
+        background: var(--oedi-oranje);
+        margin: .3em;
+        text-decoration: none;
+        padding: .3em;
+        border-radius: 3em;
+        font-weight: bold;
+        
+
+    }
+    .smaken > li:hover{
+        color: white;
+        background:var(--oedi-paars); 
+    }
+
+    .producten {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: center;
+        /*border: 5px solid grey;*/
+        text-decoration:none;
+
+
+    }
+
+    .product-foto > img{
+        width: 250px;
+        /*border: 2px solid grey;*/
+        display: flex;
+        flex-direction: row;
+    }
+
+
+
+    button {
+        background-color: var(--oedi-roze);
+        padding: 1em;
+        border-radius: 20px;
+        color: var(--oedi-oranje);
+        text-transform: uppercase;
+        font-weight: bold;
+
+
+    }
+
+    footer {
+        font-family: Arial;
+        font-weight: bold;
+
+        background-color: yellow;
+        color: black;
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center; 
+        padding-top: 2em;
+
+        
+
+    }
+
+    footer > section{
+
+       width: 45%;
+
+    }
 }
 
-.producten {
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    justify-content: center;
-    border: 5px solid grey;
-    text-decoration:none;
+@media only screen and (min-width: 1100px) {
     
-
-}
-
-.product-foto > img{
-    width: 250px;
-    border: 2px solid grey;
-    display: flex;
-    flex-direction: row;
-}
-
-.product-foto > p.nth-of-type(0) {
-    font-weight: bold;
-    
-}
-
-button {
-    background-color: var(--oedi-roze);
-    padding: 1em;
-    border-radius: 20px;
-    color: var(--oedi-oranje);
-    text-transform: uppercase;
-    font-weight: bold;
-    
-    
-}
-
-footer {
-    background-color: yellow;
-    color: black;
-    display: flex;
-    text-align: left;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    
-}
-
-footer > section{
-    
-   width: 48%;
-
+    body {
+        background: grey;
 }
 
 
