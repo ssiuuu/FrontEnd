@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Siu Han Ng
 
   #### Je startniveau:
-  Rood
+  blauw
 
   #### Je focus:
-  Responsive
+  static
  
 </details>
 
@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details open>
+<details>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -56,7 +56,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details open>
+<details>
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
@@ -109,12 +109,27 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  hier ging goed & dit was lastig 
+  
+  
+  Header > golfje kon ik niet oplossen
+  Oplossing: photoshop
+  
+  <img src="readme-images/voortgang1_moeilijk.png" width="375px" alt="breakdown van de hele pagina">
+  
+  Navigatie achtergrond hebben een golfje van een SVG, dat kan ik nog niet nu, dus zal het moeten kopieren of dieper researchen
+  
+  
+  Heb nog struggles met de footer> met de nth-of-type. Maar vorige keer lukte dat niet dus moet daar nog aan verder.
 
+  <img src="readme-images/footer_moeilijk.png" width="375px" alt="breakdown van de hele pagina">
+  
+  HEt menu moet ik nog maken maar moet nog checken hoe dan moet:
+  <img src="readme-images/menu_moeilijk.png" width="375px" alt="breakdown van de hele pagina">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -275,8 +290,12 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
 
   Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  - e-mail formulier input field: https://www.w3schools.com/tags/att_input_type_email.asp
+  - achtergrond plaatje lokaal importeren: https://www.w3schools.com/cssref/pr_background-image.asp
+  - HTML5 Element Flowchart: http://html5doctor.com/downloads/h5d-sectioning-flowchart.pdf
+  - selector code https://www.w3schools.com/cssref/sel_focus.asp
+  - scrollbare menu https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_hor_scroll
+  - centreren van tekstje https://www.w3.org/Style/Examples/007/center.nl.html
+  - code voor ronde borders op een img https://www.w3schools.com/howto/howto_css_rounded_images.asp
 
 </details>
