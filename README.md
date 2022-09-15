@@ -129,7 +129,12 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
   <img src="readme-images/footer_moeilijk.png" width="375px" alt="breakdown van de hele pagina">
   
   HEt menu moet ik nog maken maar moet nog checken hoe dan moet:
+  
   <img src="readme-images/menu_moeilijk.png" width="375px" alt="breakdown van de hele pagina">
+  
+  ik weet nog niet hoe ik de achtergrond krom maak van de oranje effectjes
+  <img src="readme-images/vg_4.png" width="375px" alt="breakdown van de hele pagina">
+
 
   ### Agenda voor meeting
   samen met je groepje opstellen
