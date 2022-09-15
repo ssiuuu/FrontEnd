@@ -21,6 +21,7 @@ button, summary {
 	--oedi-paars:#4325c5;
     --oedi-roze:#dd2c82;
     --oedi-oranje:#fecc01;
+    --oedi-geel: #fff013;
 	--color-background:#eee;
 }
 
@@ -33,16 +34,20 @@ button, summary {
 
 header {
     /*background-color: yellow;*/
-    background-image: url('https://oedipus.com/wp-content/uploads/2022/05/headers_webshop_02.svg');
+    /*background-image: url('https://oedipus.com/wp-content/uploads/2022/05/headers_webshop_02.svg');*/
+    /*background-image: url(/image/oedi_header-svg-golf.svg)*/
 	height: 10em;
-    
+    z-index: -5;
+
 }
+
 
 body {
     
     background-color:var(--color-background);
     text-align: center;
     /*text-transform: uppercase;*/
+    background-color: white;
 
 }
 
@@ -60,6 +65,14 @@ body {
         margin: 1em;
     }
     
+    .header-golf {
+        position: absolute;
+        left: 0;
+        top: -2em;  
+        z-index: -2;
+        max-width: 100%;
+    }
+    
     p {
         font-family: Arial;
 
@@ -67,10 +80,10 @@ body {
     
     h1 {
         font-family: 'Boogaloo', Arial;
-        color:var(--oedi-paars);
+        color: var(--oedi-paars);
         text-align: center;
         text-transform: uppercase;
-
+        margin: 0;       
     }
     
     h3 {
@@ -100,10 +113,17 @@ body {
         
         position: absolute;
         right:0;
-        
-
     }
 
+    nav:hover {
+        background-color: var(--oedi-roze);
+        color: white;
+    }
+    nav > li {
+        visibility: hidden;
+        
+    }
+    
     .smaken {
         font-family: 'Boogaloo', cursive, Arial;
         color: var(--oedi-roze);
@@ -114,6 +134,8 @@ body {
         justify-content: center;
         flex-wrap: wrap;
         font-size: 1.3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
         
         
 
@@ -155,7 +177,6 @@ body {
     }
 
 
-
     button {
         background-color: var(--oedi-roze);
         padding: 1em;
@@ -169,16 +190,16 @@ body {
 
     footer {
         font-family: Arial;
-        font-weight: bold;
+        /*font-weight: bold;*/
 
-        background-color: yellow;
+        background-color: var(--oedi-geel);
         color: black;
         display: flex;
         text-align: left;
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center; 
-        padding-top: 2em;
+        padding-top: 1em;
 
         
 
@@ -186,15 +207,26 @@ body {
 
     footer > section{
 
-       width: 45%;
-
+        width: 20em;
+        text-align: center;
+        margin: 1em;
+    }
+    
+    footer > section:nth-of-type(4) > p:nth-of-type(1){
+        font-weight: bold;
+    }
+    
+    #emails {
+        border: .2 solid black;
+        background: var(--oedi-geel);
     }
 }
 
+/*
 @media only screen and (min-width: 1100px) {
     
     body {
         background: grey;
 }
-
+*/
 
