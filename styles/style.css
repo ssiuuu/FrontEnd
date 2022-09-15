@@ -46,6 +46,7 @@ body {
     text-align: center;
     /*text-transform: uppercase;*/
     background-color: white;
+    margin: 0;
 
 }
 
@@ -214,6 +215,12 @@ body {
         
 
     }
+    
+    .golf-geel-footer {
+        max-width: 100%;
+        
+        
+    }    
 
     footer > section{
         width: 20em;
@@ -234,6 +241,7 @@ body {
         background: var(--oedi-geel);
         height: 3em;
     }
+    
 
     /*----------EINDE FOOTER----------*/
 
