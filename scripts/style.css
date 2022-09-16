@@ -52,13 +52,13 @@ body {
 
     
 
-/*
-@media only screen and (max-width: 800px) {*/
+
+@media only screen and (min-width: 40em) {
     
     /*----------logo linksboven in scherm laten----------*/
     .logo {
         width: 7em;
-        position: absolute;
+        position: fixed;
         left:0;
         /*geexperimenteerd met sticky maar dat lukte niet*/
         /*
@@ -117,7 +117,8 @@ body {
         
         font-size: 2em;
         
-        position: absolute;
+        /*blijven fixeren aan bovenkant van pagina*/
+        position: fixed;
         right:0;
     }
 
@@ -181,6 +182,8 @@ body {
         flex-direction: row;
         border-radius: 100%;
     }
+
+
     .product-foto > p {
         line-height: 0;
     }
@@ -223,6 +226,7 @@ body {
     
     .golf-geel-footer {
         max-width: 100%;
+        display: block;
         
         
     }    
@@ -264,7 +268,10 @@ body {
     .bier-horizontaal > img {
         padding-left: 1em;
     }
-
+    .bier-horizontaal > img:hover {
+        transform: scale(1.2);
+        transition: transform .5s; 
+    }
     .story {
         line-height: 1.5em;
         text-align: center;
@@ -274,15 +281,14 @@ body {
         margin-left: auto;
         margin-right: auto;
         
-        width: 20em;
+        width: 90%;
     }
 }
 
-/*
-@media only screen and (min-width: 1100px) {
+
+@media only screen and (min-width: 60em) {
     
     body {
         background: grey;
 }
-*/
 
