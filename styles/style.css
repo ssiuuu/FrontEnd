@@ -181,16 +181,21 @@ body {
         flex-direction: row;
         border-radius: 100%;
     }
+    .product-foto > p {
+        line-height: 0;
+    }
 
 
     button {
         background-color: var(--oedi-roze);
         padding: .5em;
+        border: none;
         border-radius: 20px;
         color: var(--oedi-oranje);
         font-family: 'Boogaloo', cursive, Arial;
         text-transform: uppercase;
         font-weight: bold;
+        margin-bottom: 2em;
     }
 
     /*----------EINDE LIJST VAN PRODUCTEN----------*/
