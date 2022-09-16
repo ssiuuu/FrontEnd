@@ -1,0 +1,288 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+
+
+
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* Huisstijl kleuren defineren voor de color: var (--kleuren); */
+	--oedi-paars:#4325c5;
+    --oedi-roze:#dd2c82;
+    --oedi-oranje:#fecc01;
+    --oedi-geel: #fff013;
+	--color-background:#eee;
+}
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+
+/*Het plaatje bovenaan de pagina goed op zn plek zetten */
+header {
+    /*background-color: yellow;*/
+    /*background-image: url('https://oedipus.com/wp-content/uploads/2022/05/headers_webshop_02.svg');*/
+    /*background-image: url(/image/oedi_header-svg-golf.svg)*/
+	height: 10em;
+    z-index: -5;
+}
+
+/*alvast de text centreren over de hele body*/
+body {
+    background-color:var(--color-background);
+    text-align: center;
+    /*text-transform: uppercase;*/
+    background-color: white;
+    margin: 0;
+
+}
+
+    
+
+/*
+@media only screen and (max-width: 800px) {*/
+    
+    /*----------logo linksboven in scherm laten----------*/
+    .logo {
+        width: 7em;
+        position: absolute;
+        left:0;
+        /*geexperimenteerd met sticky maar dat lukte niet*/
+        /*
+        position: sticky;
+        top: 0; */  
+        margin: 1em;
+    }
+    /*----------footer logo onderaan pagina----------*/
+    .logo-footer {
+        width: 7em;
+    }
+    
+    /*lukte niet om het golfje te coderen dus heb het gephotshopped*/
+    .header-golf {
+        position: absolute;
+        left: 0;
+        top: -2em;  
+        z-index: -2;
+        max-width: 100%;
+    }
+    
+    p {
+        font-family: 'Helvetica Neue';
+    }
+    
+    /*----------de H's typografie defineren----------*/
+    h1 {
+        font-family: 'Boogaloo', 'Helvetica Neue', Arial;
+        color: var(--oedi-paars);
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0; 
+        padding-top: 2em;
+    }
+    
+    h3 {
+        font-family: 'Boogaloo', Arial;
+        font-size: 1.5em;
+        text-transform: uppercase;
+        margin: .2em;
+    }
+
+    /*----------MENU dropdown menu----------*/
+    nav {
+        font-family: 'Boogaloo', cursive, Arial;
+        background:  white;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        margin: .5em;
+        margin-top: 1.2em;
+        text-decoration: none;
+        padding: .3em;
+        border-radius: 3em;
+        font-weight: bold;
+        
+        font-size: 2em;
+        
+        position: absolute;
+        right:0;
+    }
+
+    nav:hover {
+        background-color: var(--oedi-roze);
+        color: white;
+    }
+
+    nav > li {
+        visibility: hidden;
+    }
+    nav > a {
+        text-decoration: none
+    }
+    
+    /*op de ORIGINELE site kan je hier filtreren, dat is voor nu t emoeilijk daarom heb ik ze even achter elkaar gezet als een flex-row*/
+    .smaken {
+        font-family: 'Boogaloo', cursive, Arial;
+        color: var(--oedi-roze);
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        text-transform: uppercase;
+        justify-content: center;
+        flex-wrap: wrap;
+        font-size: 1.3em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .smaken > li {
+        background: var(--oedi-oranje);
+        margin: .3em;
+        text-decoration: none;
+        padding: .3em;
+        border-radius: 3em;
+        font-weight: bold;
+    }
+
+    .smaken > li:hover{
+        color: white;
+        background:var(--oedi-paars); 
+    }
+
+    /*----------HIER BEGINT DE LIJST VAN PRODUCTEN----------*/
+    .producten {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        flex-grow: 1;
+        justify-content: center;
+        /*border: 5px solid grey;*/
+        text-decoration:none;
+    }
+
+    .product-foto > img{
+        width: 250px;
+        /*border: 2px solid grey;*/
+        display: flex;
+        flex-direction: row;
+        border-radius: 100%;
+    }
+    .product-foto > p {
+        line-height: 0;
+    }
+
+
+    button {
+        background-color: var(--oedi-roze);
+        padding: .5em;
+        border: none;
+        border-radius: 20px;
+        color: var(--oedi-oranje);
+        font-family: 'Boogaloo', cursive, Arial;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 2em;
+    }
+
+    /*----------EINDE LIJST VAN PRODUCTEN----------*/
+    
+
+    /*----------START FOOTER----------*/
+    /*Footer heb ik in sections gemaakt, deze flex wrap ik. Als het niet past gaan ze een rij omlaag. Past het wel dan naast elkaar*/
+
+    footer {
+        font-family: Arial;
+        /*font-weight: bold;*/
+
+        background-color: var(--oedi-geel);
+        color: black;
+        display: flex;
+        text-align: left;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center; 
+        padding-top: 1em;
+        font-weight: 300;
+        
+
+    }
+    
+    .golf-geel-footer {
+        max-width: 100%;
+        
+        
+    }    
+
+    footer > section{
+        width: 20em;
+        text-align: center;
+        margin: 1em;
+    }
+    
+    footer > section:nth-of-type(4) > p:nth-of-type(1){
+        font-weight: bold;
+    }
+
+    footer > section > a{
+        color: black;
+    }
+    
+    #emails {
+        border: .2 solid black;
+        background: var(--oedi-geel);
+        height: 3em;
+    }
+    
+
+    /*----------EINDE FOOTER----------*/
+
+    
+    /*BIERTJES HORIZONTALE SCROLL*/
+    .bier-horizontaal {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+
+        padding: 2em;
+        height: 30em;
+    }
+
+    .bier-horizontaal > img {
+        padding-left: 1em;
+    }
+
+    .story {
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 200;
+
+        margin-left: auto;
+        margin-right: auto;
+        
+        width: 20em;
+    }
+}
+
+/*
+@media only screen and (min-width: 1100px) {
+    
+    body {
+        background: grey;
+}
+*/
+
