@@ -33,9 +33,6 @@ button, summary {
 
 /*Het plaatje bovenaan de pagina goed op zn plek zetten */
 header {
-    /*background-color: yellow;*/
-    /*background-image: url('https://oedipus.com/wp-content/uploads/2022/05/headers_webshop_02.svg');*/
-    /*background-image: url(/image/oedi_header-svg-golf.svg)*/
 	height: 10em;
     z-index: -5;
 }
@@ -53,19 +50,14 @@ body {
     
 
 
-@media only screen and (min-width: 40em) {
-    
     /*----------logo linksboven in scherm laten----------*/
     .logo {
         width: 7em;
         position: fixed;
         left:0;
-        /*geexperimenteerd met sticky maar dat lukte niet*/
-        /*
-        position: sticky;
-        top: 0; */  
         margin: 1em;
     }
+   
     /*----------footer logo onderaan pagina----------*/
     .logo-footer {
         width: 7em;
@@ -102,7 +94,7 @@ body {
     }
 
     /*----------MENU dropdown menu----------*/
-    nav {
+    header > button {
         font-family: 'Boogaloo', cursive, Arial;
         background:  white;
         text-decoration: none;
@@ -122,19 +114,107 @@ body {
         right:0;
     }
 
-    nav:hover {
+    header > button:hover {
         background-color: var(--oedi-roze);
         color: white;
+        text-decoration: underline;
     }
 
-    nav > li {
+    /*header > nav {
         visibility: hidden;
-    }
+    }*/
     nav > a {
-        text-decoration: none
+        text-decoration: none;
     }
+
+
+
+/***************/
+/* MENU BUTTON */
+/***************/
+header > button {
+  /* JOUW CODE HIER - stap 3 */
+  order:-1;
+}
+
+
+
+/***************/
+/* SLUIT BUTTON */
+/***************/
+header > nav button {
+ font-family: 'Boogaloo', cursive, Arial;
+        background:  white;
+        text-decoration: none;
+        text-transform: uppercase;
+        
+        margin: .5em;
+        margin-top: 1.2em;
+        text-decoration: none;
+        padding: .3em;
+        border-radius: 3em;
+        font-weight: bold;
+        
+        font-size: 2em;
+        
+        /*blijven fixeren aan bovenkant van pagina*/
+        position: fixed;
+        right:0;
+}
+
+/************/
+/* HET MENU knopje rechts boven om smooth erin the sliden (van de oefening JS ) */
+/************/
+nav {
+
+    background-color: white;
+    padding:1em;
+  
+  display:grid;
+  align-content:start;
+  gap:1em;
+  
+  
+  /* JOUW CODE HIER - stap 1 */
+  position:fixed;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  
+  /* JOUW CODE HIER - stap 2 */
+  transform:translatex(110%);
+  
+  /* JOUW CODE HIER - stap 4 */
+  transition:transform .5s;
+}
+
+/* als menu open is */
+nav.toonMenu {
+  /* JOUW CODE HIER - stap 4 */
+  transform:translatex(0);
     
-    /*op de ORIGINELE site kan je hier filtreren, dat is voor nu t emoeilijk daarom heb ik ze even achter elkaar gezet als een flex-row*/
+}
+
+nav > ul > li {
+        list-style:none;
+        font-size: 2em;
+        
+        background-color: white;
+        font-family: 'Boogaloo', 'Helvetica Neue', Arial;
+        color: var(--oedi-paars);
+        text-align: center;
+        text-transform: uppercase;
+        /*position:fixed;*/
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        padding: 1em;
+}
+
+    
+    /*op de ORIGINELE site kan je hier filtreren, dat is voor nu te moeilijk daarom heb ik ze even achter elkaar gezet als een flex-row*/
     .smaken {
         font-family: 'Boogaloo', cursive, Arial;
         color: var(--oedi-roze);
@@ -180,6 +260,7 @@ body {
         /*border: 2px solid grey;*/
         display: flex;
         flex-direction: row;
+        /*vierkante plaatje rond maken*/
         border-radius: 100%;
     }
 
@@ -268,10 +349,13 @@ body {
     .bier-horizontaal > img {
         padding-left: 1em;
     }
+    /*bij de hover van de biertjes wordt het smooth groter*/
     .bier-horizontaal > img:hover {
         transform: scale(1.2);
         transition: transform .5s; 
     }
+
+    /*DE TEKST*/
     .story {
         line-height: 1.5em;
         text-align: center;
@@ -283,7 +367,6 @@ body {
         
         width: 90%;
     }
-}
 
 
 @media only screen and (min-width: 60em) {
@@ -291,4 +374,14 @@ body {
     body {
         background: grey;
 }
-
+    
+    nav > ul > li {
+        list-style:none;
+        
+        font-family: 'Boogaloo', 'Helvetica Neue', Arial;
+        color: var(--oedi-paars);
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0; 
+        padding-top: 2em;
+    }
