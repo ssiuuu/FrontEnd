@@ -302,5 +302,6 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
   - scrollbare menu https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_menu_hor_scroll
   - centreren van tekstje https://www.w3.org/Style/Examples/007/center.nl.html
   - code voor ronde borders op een img https://www.w3schools.com/howto/howto_css_rounded_images.asp
+  - Javascript: vanuit de werkgroep PDF van de JS les
 
 </details>
