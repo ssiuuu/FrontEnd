@@ -32,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Je website
 
-<details>
+<details open>
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
@@ -147,12 +147,12 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Met de volgende dingen had ik hulp gevraagd, Bram heeft mij geholpen met de volgende dingen:
+  -display block van golf geel 
+  -hover groter transform + animatie
+  -text em > % procenten doen
+  -prijs naast knopje > display flex
+  -prijs/nav curly achtergrond is een image
 
 </details>
 
@@ -269,19 +269,24 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  De website lijkt er nui echt goed op, en ben blij met het resultaat. Hierbij heb ik nog animaties en transities toegevoegd, waardoor het wat leuker is.
+  <img src="readme-images/eind1_site" width="375px" alt="top">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb vooral mijn kennis in css uitgebreid en JS vind ik nog moeilijk. Het lezen ervan begrijp ik wel, maar zelf schrijven is best lastig.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/eind1_footer.png" width="375px" alt="top">
+  <img src="readme-images/eind1_2e.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Foutjes zit in een kleine hoekje. Soms struggle ik met een code fout, maar blijkt gewoon een kleine tweak te zijn.
+  Het is niet gelukt om de achtergrond van het menu mooi en kleurrijk te maken. Volgens mij heeft Oedipus dit met een soort vector gemaakt. Maar ik kan in de 'inspect element' dit niet vinden.
+  
+  Het zoekknopje vind ik niet zo mooi en heb daar niet zo veel moeite in gestoken. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/eind3_menu.png" width="375px" alt="bummer">
 </details>
 
 
