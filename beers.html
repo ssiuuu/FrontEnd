@@ -18,7 +18,6 @@
 
 
 
-
 <header>
     
 	<script defer src="scripts/script.js"></script>
@@ -26,27 +25,42 @@
     <!--Het logo bovenaan de pagina--> 
     <img src="images/oedi_logo.svg" alt="Logo Oedipus home" class="logo">
     
-    <!--De navigatie bovenaan de pagina--> 
-    <nav>
-       <a href="index.html">MENU</a>
-        <!--<a href="#">MENU</a>-->
-    </nav>
+     <!-- de open button -->
+  <!-- de button is niet relevant voor screenreaders -->
+  <!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+  <button aria-hidden="true">Menu</button>
+  
+  
+  <!--  het menu -->
+  <nav>
+    <!-- de sluit button -->
+    <!-- de button is ook niet relevant voor screenreaders -->
+    <button aria-hidden="true"> X </button>
     
+    <ul>
+      <li><a href="index.html"> shop</a></li>
+      <li><a href="index.html"> venues</a></li>
+      <li><a href="index.html"> radio oedipus</a></li>
+      <li><a href="index.html"> beers</a></li>
+      <li><a href="index.html"> oedipus experience</a></li>
+      <li><a href="index.html"> join our team</a></li>
+      <li><a href="index.html"> contact</a></li>
+    </ul>
+  </nav>
+
     <img src="images/oedi_header-svg-golf.svg" alt="Logo Oedipus home" class="header-golf">
-
-
-    <!--
-    <nav>
-      <a href="">shop</a>
-      <a href="">venues</a>
-      <a href="">radio oedipus</a>
-      <a href="">beers</a>
-      <a href="">oedipus experience</a>
-      <a href="">join our team</a>
-      <a href="">contact</a>
-    </nav> De navigatie bovenaan de pagina--> 
+    
+    <ul>
+      <li><a href="index.html"> shop</a></li>
+      <li><a href="index.html"> venues</a></li>
+      <li><a href="index.html"> radio oedipus</a></li>
+      <li><a href="index.html"> beers</a></li>
+      <li><a href="index.html"> oedipus experience</a></li>
+      <li><a href="index.html"> join our team</a></li>
+      <li><a href="index.html"> contact</a></li>
+    </ul>
+    
 </header>
-
 
 
 
