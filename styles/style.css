@@ -9,10 +9,6 @@ button, summary {
 	cursor: pointer;
 }
 
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -47,85 +43,113 @@ body {
 
 }
 
-    
 
 
-    /*----------logo linksboven in scherm laten----------*/
-    .logo {
-        width: 7em;
-        position: fixed;
-        left:0;
-        margin: 1em;
-    }
-   
-    /*----------footer logo onderaan pagina----------*/
-    .logo-footer {
-        width: 7em;
-    }
     
-    /*lukte niet om het golfje te coderen dus heb het gephotshopped*/
-    .header-golf {
-        position: absolute;
-        left: 0;
-        top: -2em;  
-        z-index: -2;
-        max-width: 100%;
-    }
+/*----------logo linksboven in scherm laten----------*/
+.logo {
+    width: 7em;
+    position: fixed;
+    left:0;
+    margin: 1em;
+    z-index: 1;
     
-    p {
-        font-family: 'Helvetica Neue';
-    }
-    
-    /*----------de H's typografie defineren----------*/
-    h1 {
-        font-family: 'Boogaloo', 'Helvetica Neue', Arial;
-        color: var(--oedi-paars);
-        text-align: center;
-        text-transform: uppercase;
-        margin: 0; 
-        padding-top: 2em;
-    }
-    
-    h3 {
-        font-family: 'Boogaloo', Arial;
-        font-size: 1.5em;
-        text-transform: uppercase;
-        margin: .2em;
-    }
+}
 
-    /*----------MENU dropdown menu----------*/
-    header > button {
-        font-family: 'Boogaloo', cursive, Arial;
-        background:  white;
-        text-decoration: none;
-        text-transform: uppercase;
-        
-        margin: .5em;
-        margin-top: 1.2em;
-        text-decoration: none;
-        padding: .3em;
-        border-radius: 3em;
-        font-weight: bold;
-        
-        font-size: 2em;
-        
-        /*blijven fixeren aan bovenkant van pagina*/
-        position: fixed;
-        right:0;
-    }
+.logo:hover {
+    transform: rotate(360deg);
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.2, 0.5, 0.5, 0.2);
+}
 
-    header > button:hover {
-        background-color: var(--oedi-roze);
-        color: white;
-        text-decoration: underline;
-    }
 
-    /*header > nav {
-        visibility: hidden;
-    }*/
-    nav > a {
-        text-decoration: none;
-    }
+
+
+/*----------footer logo onderaan pagina----------*/
+.logo-footer {
+    width: 7em;
+}
+
+
+
+
+/*lukte niet om het golfje te coderen dus heb het gephotshopped*/
+.header-golf {
+    position: absolute;
+    left: 0;
+    top: -2em;  
+    z-index: -2;
+    max-width: 100%;
+}
+
+
+
+
+p {
+    font-family: 'Helvetica Neue';
+}
+
+/*----------de H's typografie defineren----------*/
+h1 {
+    font-family: 'Boogaloo', 'Helvetica Neue', Arial;
+    color: var(--oedi-paars);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0; 
+    padding-top: 2em;
+    
+    animation: fadeIn 6s;
+}
+/*de h1 heel smooth in faen*/
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+h3 {
+    font-family: 'Boogaloo', Arial;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: .2em;
+}
+
+/*----------MENU dropdown menu----------*/
+header > button {
+    color: black;
+    font-family: 'Boogaloo', cursive, Arial;
+    background:  white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin: .5em;
+    margin-top: 1.2em;
+    text-decoration: none;
+    padding: .3em;
+    border-radius: 3em;
+    font-weight: bold;
+
+    font-size: 2em;
+
+    /*blijven fixeren aan bovenkant van pagina*/
+    position: fixed;
+    right:0;
+}
+
+header > button:hover {
+    background-color: var(--oedi-roze);
+    color: white;
+    text-decoration: underline;
+
+}
+
+/*header > nav {
+    visibility: hidden;
+}*/
+nav > a {
+    text-decoration: none;
+}
+
+
 
 
 
@@ -133,255 +157,326 @@ body {
 /* MENU BUTTON */
 /***************/
 header > button {
-  /* JOUW CODE HIER - stap 3 */
-  order:-1;
+  /* JOUW CODE HIER - stap 3 
+  order:1;*/
 }
-
-
 
 /***************/
 /* SLUIT BUTTON */
 /***************/
 header > nav button {
- font-family: 'Boogaloo', cursive, Arial;
-        background:  white;
-        text-decoration: none;
-        text-transform: uppercase;
-        
-        margin: .5em;
-        margin-top: 1.2em;
-        text-decoration: none;
-        padding: .3em;
-        border-radius: 3em;
-        font-weight: bold;
-        
-        font-size: 2em;
-        
-        /*blijven fixeren aan bovenkant van pagina*/
-        position: fixed;
-        right:0;
+    font-family: 'Boogaloo', cursive, Arial;
+    background:  none;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    margin: .5em;
+    margin-top: .4em;
+    text-decoration: none;
+    
+    border-radius: 3em;
+    font-weight: bold;
+
+    font-size: 3em;
+
+    /*blijven fixeren aan bovenkant van pagina*/
+    position: fixed;
+    right:0;
+}
+header > nav button:hover {
+    color: var(--oedi-roze);
 }
 
 /************/
 /* HET MENU knopje rechts boven om smooth erin the sliden (van de oefening JS ) */
 /************/
 nav {
-
     background-color: white;
     padding:1em;
-  
-  display:grid;
-  align-content:start;
-  gap:1em;
-  
-  
-  /* JOUW CODE HIER - stap 1 */
-  position:fixed;
-  left:0;
-  right:0;
-  top:0;
-  bottom:0;
-  
-  /* JOUW CODE HIER - stap 2 */
-  transform:translatex(110%);
-  
-  /* JOUW CODE HIER - stap 4 */
-  transition:transform .5s;
+
+    display:grid;
+    align-content:start;
+
+    /* fixt de positie in het midden, daarom is alles 0. Alles eromheen is dan "fullscreen"*/
+    position:fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+
+    /* menu verbergens rechts van de pagina */
+    transform:translatex(110%);
+
+    /* smooth inschuiven via rechts */
+    transition:transform 1s;
 }
 
-/* als menu open is */
+/* als menu open is, schuift het menu van rechts naar links naar de X as 0 positie */
 nav.toonMenu {
-  /* JOUW CODE HIER - stap 4 */
-  transform:translatex(0);
-    
+    transform:translatex(0);
+    background: var(--oedi-paars);
 }
 
 nav > ul > li {
-        list-style:none;
-        font-size: 2em;
-        
-        background-color: white;
-        font-family: 'Boogaloo', 'Helvetica Neue', Arial;
-        color: var(--oedi-paars);
-        text-align: center;
-        text-transform: uppercase;
-        /*position:fixed;*/
-        left:0;
-        right:0;
-        top:0;
-        bottom:0;
-        padding: 1em;
+    list-style:none;
+    font-size: 2em;
+    background-color: var(--oedi-paars);
+    font-family: 'Boogaloo', 'Helvetica Neue', Arial;
+    text-align: center;
+    text-transform: uppercase;
+
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    padding: 1em;
 }
 
+nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+nav > ul > li > a:hover {
+    color: var(--oedi-geel);
+    text-decoration: underline;
+    transition-duration: 1s;
+
+}
+
+/*NORMALE NAV VERBERGEN bij mobiel*/
+
+header > ul > li{
+        visibility: hidden;
+    }
+
+
+
+
+/*op de ORIGINELE site kan je hier filtreren, dat is voor nu te moeilijk daarom heb ik ze even achter elkaar gezet als een flex-row*/
+.smaken {
+    font-family: 'Boogaloo', cursive, Arial;
+    color: var(--oedi-roze);
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.3em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.smaken > li {
+    background: var(--oedi-oranje);
+    margin: .3em;
+    text-decoration: none;
+    padding: .3em;
+    border-radius: 3em;
+    font-weight: bold;
+}
+
+.smaken > li:hover{
+    color: white;
+    background:var(--oedi-paars); 
+}
+
+
+
+
+
+/*----------HIER BEGINT DE LIJST VAN PRODUCTEN----------*/
+.producten {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    /*border: 5px solid grey;*/
+    text-decoration:none;
+}
+
+.product-foto > img{
+    width: 250px;
+    /*border: 2px solid grey;*/
+    display: flex;
+    flex-direction: row;
+    /*vierkante plaatje rond maken*/
+    border-radius: 100%;
+}
+
+
+.product-foto > p {
+    line-height: 0;
+}
+
+button {
+    background-color: var(--oedi-roze);
+    padding: .5em;
+    border: none;
+    border-radius: 20px;
+    color: var(--oedi-oranje);
+    font-family: 'Boogaloo', cursive, Arial;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+/*----------EINDE LIJST VAN PRODUCTEN----------*/
+
+
+
+
+
+
+/*----------START FOOTER----------*/
+/*Footer heb ik in sections gemaakt, deze flex wrap ik. Als het niet past gaan ze een rij omlaag. Past het wel dan naast elkaar*/
+
+footer {
+    font-family: Arial;
+    /*font-weight: bold;*/
+
+    background-color: var(--oedi-geel);
+    color: black;
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; 
+    padding-top: 1em;
+    font-weight: 300;
+
+
+}
+
+.golf-geel-footer {
+    max-width: 100%;
+    display: block;
+
+
+}    
+
+footer > section{
+    width: 20em;
+    text-align: center;
+    margin: 1em;
+}
+
+footer > section:nth-of-type(4) > p:nth-of-type(1){
+    font-weight: bold;
+}
+
+footer > section > a{
+    color: black;
+}
+
+#emails {
+    border: .2 solid black;
+    background: var(--oedi-geel);
+    height: 3em;
+}
+
+/*----------EINDE FOOTER----------*/
+
+
+
+
+
+
+/*BIERTJES HORIZONTALE SCROLL*/
+.bier-horizontaal {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+
+    padding: 2em;
+    height: 30em;
+}
+
+.bier-horizontaal > img {
+    padding-left: 1em;
+}
+/*bij de hover van de biertjes wordt het smooth groter*/
+.bier-horizontaal > img:hover {
+    transform: scale(1.2);
+    transition: transform .5s; 
+}
+
+/*DE TEKST*/
+.story {
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 200;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 90%;
+}
+
+
+
+
+
+@media only screen and (min-width: 60em) {
     
-    /*op de ORIGINELE site kan je hier filtreren, dat is voor nu te moeilijk daarom heb ik ze even achter elkaar gezet als een flex-row*/
-    .smaken {
+    body {
+        /*background: grey;*/
+    }
+    
+    .header-golf {
+        transform:translatey(-20%);
+        width: 100%;
+    }
+   
+    /*MENU KOP WEGHALEN*/
+    header > button {
+        visibility: hidden;
+    }
+    
+    
+    /*NAVIGATIE ROW BOVENAAN*/
+    header > ul {
         font-family: 'Boogaloo', cursive, Arial;
         color: var(--oedi-roze);
+        margin-right: 2em;
         list-style: none;
         display: flex;
         flex-direction: row;
         text-transform: uppercase;
-        justify-content: center;
+        justify-content: flex-end;
         flex-wrap: wrap;
         font-size: 1.3em;
-        padding-top: 1em;
-        padding-bottom: 1em;
+        padding-top: 2.5em;
+        padding-bottom: 1em;    
     }
 
-    .smaken > li {
-        background: var(--oedi-oranje);
+    header > ul > li {
+        background: white;
         margin: .3em;
         text-decoration: none;
         padding: .3em;
         border-radius: 3em;
         font-weight: bold;
     }
-
-    .smaken > li:hover{
-        color: white;
-        background:var(--oedi-paars); 
-    }
-
-    /*----------HIER BEGINT DE LIJST VAN PRODUCTEN----------*/
-    .producten {
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        flex-grow: 1;
-        justify-content: center;
-        /*border: 5px solid grey;*/
-        text-decoration:none;
-    }
-
-    .product-foto > img{
-        width: 250px;
-        /*border: 2px solid grey;*/
-        display: flex;
-        flex-direction: row;
-        /*vierkante plaatje rond maken*/
-        border-radius: 100%;
-    }
-
-
-    .product-foto > p {
-        line-height: 0;
-    }
-
-
-    button {
-        background-color: var(--oedi-roze);
-        padding: .5em;
-        border: none;
-        border-radius: 20px;
-        color: var(--oedi-oranje);
-        font-family: 'Boogaloo', cursive, Arial;
-        text-transform: uppercase;
-        font-weight: bold;
-        margin-bottom: 2em;
-    }
-
-    /*----------EINDE LIJST VAN PRODUCTEN----------*/
     
+    header > ul > li:hover {
+        background:var(--oedi-geel);
+        text-decoration: underline;
+    }
 
-    /*----------START FOOTER----------*/
-    /*Footer heb ik in sections gemaakt, deze flex wrap ik. Als het niet past gaan ze een rij omlaag. Past het wel dan naast elkaar*/
-
-    footer {
-        font-family: Arial;
-        /*font-weight: bold;*/
-
-        background-color: var(--oedi-geel);
+    header > ul > li a:hover{
+        text-decoration: none;
+    }
+    
+    header > ul > li > a {
         color: black;
-        display: flex;
-        text-align: left;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center; 
-        padding-top: 1em;
-        font-weight: 300;
-        
-
-    }
-    
-    .golf-geel-footer {
-        max-width: 100%;
-        display: block;
-        
-        
-    }    
-
-    footer > section{
-        width: 20em;
-        text-align: center;
-        margin: 1em;
-    }
-    
-    footer > section:nth-of-type(4) > p:nth-of-type(1){
-        font-weight: bold;
+        text-decoration: none;
     }
 
-    footer > section > a{
-        color: black;
+    header > ul > li{
+        visibility:visible;
     }
-    
-    #emails {
-        border: .2 solid black;
-        background: var(--oedi-geel);
-        height: 3em;
-    }
-    
-
-    /*----------EINDE FOOTER----------*/
-
-    
-    /*BIERTJES HORIZONTALE SCROLL*/
-    .bier-horizontaal {
-        display: flex;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-
-        padding: 2em;
-        height: 30em;
-    }
-
-    .bier-horizontaal > img {
-        padding-left: 1em;
-    }
-    /*bij de hover van de biertjes wordt het smooth groter*/
-    .bier-horizontaal > img:hover {
-        transform: scale(1.2);
-        transition: transform .5s; 
-    }
-
-    /*DE TEKST*/
-    .story {
-        line-height: 1.5em;
-        text-align: center;
-        font-size: 1.5em;
-        font-weight: 200;
-
-        margin-left: auto;
-        margin-right: auto;
-        
-        width: 90%;
-    }
-
-
-@media only screen and (min-width: 60em) {
-    
-    body {
-        background: grey;
 }
-    
-    nav > ul > li {
-        list-style:none;
-        
-        font-family: 'Boogaloo', 'Helvetica Neue', Arial;
-        color: var(--oedi-paars);
-        text-align: center;
-        text-transform: uppercase;
-        margin: 0; 
-        padding-top: 2em;
-    }
