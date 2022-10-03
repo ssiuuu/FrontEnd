@@ -270,7 +270,7 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
 
   ### Je uitkomst - karakteristiek screenshots:
   De website lijkt er nui echt goed op, en ben blij met het resultaat. Hierbij heb ik nog animaties en transities toegevoegd, waardoor het wat leuker is.
-  <img src="readme-images/eind1_site" width="375px" alt="top">
+  <img src="readme-images/eind1_site.png" width="375px" alt="top">
 
 
   ### Dit ging goed/Heb ik geleerd: 
