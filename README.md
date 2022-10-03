@@ -265,7 +265,7 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
