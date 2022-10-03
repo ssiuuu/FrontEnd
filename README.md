@@ -109,7 +109,7 @@ Bril met gele filter:   alles heeft een gele tint, witte kleuren zijn geel, en w
 
 ## Voortgang 1 (week 2)
 
-<details open>
+<details>
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
